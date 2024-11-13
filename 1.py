@@ -10,6 +10,7 @@ for char in input_string:
         words.append(word)
         word = ""
 
+
 #проверка на последнее слово
 if word:
     words.append(word)
