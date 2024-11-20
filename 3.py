@@ -1,8 +1,18 @@
 import random
 
-n = int(input("Введите размер списка: "))
-lower_bound= -100
-upper_bound= 100
+while True:
+    try:
+        n = int(input("Введите размер списка: "))
+        if n < 0:
+            print("Размер списка не может быть отрицательным")
+            continue
+        break
+    except ValueError:
+        print("Ошибка: введите целое число")
+
+
+lower_bound = -100
+upper_bound = 100
 
 random_list = [random.randint(lower_bound, upper_bound) for _ in range(n)]
 
