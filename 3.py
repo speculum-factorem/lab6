@@ -15,10 +15,11 @@ lower_bound = -100
 upper_bound = 100
 
 random_list = [random.randint(lower_bound, upper_bound) for _ in range(n)]
+print(random_list)
 
 przv = 1
 
-for i in range(2, n, 2):
+for i in range(1, n, 2):
     przv *= random_list[i]
 
 print(f"Произведение: {przv}")
